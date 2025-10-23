@@ -4,14 +4,14 @@ A simple wrapper for nmap that performs several different types of discovery sca
 
 ## Discovery Types
 
-ICMP Echo
-ICMP Netmask
-ICMP Timestamp
-ICMP Protocol
-TCP SYN Port Discovery
-	Ports 21,22,53,80,443,8080,8443
-UDP Host Discovery
-	Ports 53,161,500
+ICMP Echo  
+ICMP Netmask  
+ICMP Timestamp  
+ICMP Protocol  
+TCP SYN Port Discovery  
+	Ports 21,22,53,80,443,8080,8443  
+UDP Host Discovery  
+	Ports 53,161,500  
 
 ## Output
 
