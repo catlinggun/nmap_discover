@@ -69,6 +69,6 @@ echo "    [\033[92m*\033[0m] UDP [\033[92m${count}\033[0m]"
 #parse out results
 echo "[-] Parsing Results..."
 grep Up discovery*.gnmap | grep -Po '(?<= )([0-9]{1,3}\.){3}[0-9]{1,3}(?= )' | sort -u -t. -k 1,1n -k 2,2n -k 3,3n -k 4,4n > live_ips
-echo "    [\033[92m*\033[0m] `wc -l < live_ips` unique IPs found and written to file [\033[92mlive_ips\033[0m]."
+echo "    [\033[92m*\033[0m] `wc -l < live_ips` unique IPs found and written to file [\033[92mlive_ips\033[0m]"
 grep Up discovery*.gnmap | grep -Po '(?<=\().{1,}(?=\))' | sort -u > live_fqdns
-echo "    [\033[92m*\033[0m] `wc -l < live_fqdns` unique FQDNs found and written to file [\033[92mlive_fqdns\033[0m]."
+echo "    [\033[92m*\033[0m] `wc -l < live_fqdns` unique FQDNs found and written to file [\033[92mlive_fqdns\033[0m]\n"
